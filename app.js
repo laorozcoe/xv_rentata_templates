@@ -40,6 +40,12 @@ app.get('/t5_index', (req, res) => {
 });
 // ----------------------------------------------------------------------------------------
 // ----------------------------------------------------------------------------------------
+// template 6
+app.get('/t6_index', (req, res) => {
+    res.sendFile(path.join(__dirname,'src/views/template6','index.html'));
+});
+// ----------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------
 
 // Definir el puerto en el que escuchará el servidor
 const PORT = process.env.PORT || 3000;
@@ -48,6 +54,7 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
+
 
 
 
